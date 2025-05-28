@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}      
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: center; /* or space-between, based on your goal */
+    align-items: center;
+    padding: 2rem;
+    background-color: #e8f0fe;
+    height: 920px;
+    width: auto;
+    text-align: center;
+    background-image: url(image.jpeg);
+    background-size: cover; /* or 'contain' */
+    background-position: center; /* Keeps the image centered */
+    background-repeat: no-repeat; /* Prevents tiling */
+}
+
+.header-txt h1 {
+    font-size: 5rem;
+    color: #ffffff;
+    transition: transform 0.2s;
+}
+
+.header-txt:hover h1{
+    transform: scale(1.02);
+}
+
+
+/* Tips Title */
+.title {
+    text-align: center;
+    margin: 2rem 0 1rem;
+    padding-bottom: 20px;
+}
+
+.title h2 {
+    font-size: 1.8rem;
+}
+
+  /* Tips Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 0 2rem 2rem;
+}
+
+.tip-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.tip-card:hover {
+    transform: scale(1.02);
+}
+
+.footer {
+    background-color: lightblue;
+    text-align: center;
+    padding: 5px;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 768px) { 
+    .grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) { 
+    .grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 768px) {
+    .header-txt h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 480px) { 
+    .header-txt h1 {
+        font-size: 3rem;
+    }
+}
+
+.logog {
+    margin: 0;
+    padding: 0;
+    width: 5px;
+
+}
